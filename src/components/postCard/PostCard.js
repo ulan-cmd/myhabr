@@ -4,8 +4,6 @@ import './postCard.css';
 class PostCard extends React.Component{
     constructor(props) {
         super(props);
-
-        console.log(this.props);
     }
 
     render(){
@@ -26,6 +24,12 @@ class PostCard extends React.Component{
             </div>
         )
     }
+}
+
+PostCard.defaultProps = {
+    createName:'Автор неизвестен',
+    createDate:'Дата не указано',
+    title:'...'
 }
 
 export default PostCard;
